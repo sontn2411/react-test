@@ -1,14 +1,17 @@
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
+import Home from './page/Home'
+import { HelmetProvider } from 'react-helmet-async'
+import About from './page/About'
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-      </Routes>
+      <HelmetProvider>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </HelmetProvider>
     </>
   )
 }
