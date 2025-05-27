@@ -12,11 +12,8 @@
   <meta property="og:image" content="https://example.com/default-image.jpg" />
   <meta property="og:url" content="https://example.com" />
   <meta property="og:type" content="website" />
-</head>
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+
   <script>
     // Gọi API để lấy dữ liệu meta
     fetch('description.json') // Thay bằng URL API thực tế
@@ -45,7 +42,7 @@
           ogTitle.setAttribute('property', 'og:title');
           document.head.appendChild(ogTitle);
         }
-        ogTitle.content = data.title || 'Default Title';
+        ogTitle.content = data.title || 'Default Title1';
 
         // Cập nhật meta og:description
         let ogDesc = document.querySelector('meta[property="og:description"]');
@@ -87,6 +84,12 @@
         console.error('Không thể lấy dữ liệu meta từ API:', err);
       });
   </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
 </body>
 
 </html>
