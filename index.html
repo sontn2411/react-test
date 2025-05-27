@@ -5,36 +5,27 @@
   <meta charset="UTF-8" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" />
-  <meta property="og:title" content="Home | Smarter" />
-  <meta name="description" content="Smarter, Smarter" />
-  <meta name="keywords" content="Smarter, Smarter" />
-  <link rel="image_src" type="image/jpg"
-    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s" />
 
-  <meta property="og:url" content="https://www.smarter.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="Smarter, Smarter" />
-  <meta property="og:image"
-    content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s" />
-  <meta property="og:image:alt" content="Home | Smarter" />
 
-  <meta name="twitter:title" content="Home | Smarter" />
-  <meta name="twitter:card"
-    content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s" />
-  <meta name="twitter:description" content="Smarter, Smarter" />
-  <meta name="twitter:image"
-    content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s" />
-
-  <meta name="dc.created" content="Smarter" />
-  <meta name="dc.publisher" content="Smarter" />
-  <meta name="dc.rights.copyright" content="Smarter" />
-  <meta name="dc.creator.name" content="Smarter" />
-  <title>Vite + React + TS</title>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
+
+
+<script>
+
+  fetch('/description.txt')
+    .then((res) => res.text())
+    .then((text) => {
+      const meta = document.createElement('meta')
+      meta.name = 'description'
+      meta.content = text
+      document.head.appendChild(meta)
+    })
+    .catch((err) => console.error('Không thể đọc file TXT:', err))
+</script>
 
 </html>
