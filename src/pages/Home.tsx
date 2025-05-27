@@ -1,38 +1,43 @@
-import { useEffect } from 'react'
-
 const Home = () => {
-  useEffect(() => {
-    document.title = 'Trang chủ | Smarter'
+  return (
+    <div>
+      <meta name='description' content='Smarter, Smarter' />
+      <meta name='keywords' content='Smarter, Smarter' />
+      <link
+        rel='image_src'
+        type='image/jpg'
+        href='https://demo.sweetsoft.vn/smarter/images/bg-shared.png'
+      />
 
-    // Hàm thêm hoặc cập nhật một thẻ meta
-    const updateMetaTag = (
-      attr: string,
-      attrValue: string,
-      content: string
-    ) => {
-      let element = document.querySelector(`meta[${attr}='${attrValue}']`)
-      if (!element) {
-        element = document.createElement('meta')
-        element.setAttribute(attr, attrValue)
-        document.head.appendChild(element)
-      }
-      element.setAttribute('content', content)
-    }
+      <meta property='og:url' content='https://www.smarter.com' />
+      <meta property='og:type' content='website' />
+      <meta property='og:description' content='Smarter, Smarter' />
+      <meta
+        property='og:image'
+        content='https://demo.sweetsoft.vn/smarter/images/bg-shared.png'
+      />
+      <meta property='og:image:alt' content='Home | Smarter' />
 
-    updateMetaTag(
-      'property',
-      'og:image',
-      'https://static.vecteezy.com/system/resources/thumbnails/014/440/983/small_2x/image-icon-design-in-blue-circle-png.png'
-    )
-    updateMetaTag('property', 'og:description', 'Mô tả nội dung động từ React')
-    updateMetaTag(
-      'name',
-      'description',
-      'Trang chủ Smarter, cập nhật meta động'
-    )
-  }, [])
+      <meta name='twitter:title' content='Home | Smarter' />
+      <meta
+        name='twitter:card'
+        content='https://demo.sweetsoft.vn/smarter/images/bg-shared.png'
+      />
+      <meta name='twitter:description' content='Smarter, Smarter' />
+      <meta
+        name='twitter:image'
+        content='https://demo.sweetsoft.vn/smarter/images/bg-shared.png'
+      />
 
-  return <div>Home</div>
+      <meta name='dc.created' content='Smarter' />
+      <meta name='dc.publisher' content='Smarter' />
+      <meta name='dc.rights.copyright' content='Smarter' />
+      <meta name='dc.creator.name' content='Smarter' />
+      <title> Home</title>
+
+      <h1>Home</h1>
+    </div>
+  )
 }
 
 export default Home

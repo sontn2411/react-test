@@ -7,10 +7,10 @@ import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HelmetProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <HelmetProvider>
         <App />
-      </BrowserRouter>
-    </HelmetProvider>
+      </HelmetProvider>
+    </BrowserRouter>
   </StrictMode>
 )

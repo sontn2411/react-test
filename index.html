@@ -4,81 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <!-- Thẻ meta mặc định, sẽ được cập nhật động bởi JavaScript -->
+
   <title>Loading...</title>
 
 
 
-  <!-- <script>
-    // Gọi API để lấy dữ liệu meta
-    fetch('description.json') // Thay bằng URL API thực tế
-      .then((res) => {
 
-        if (!res.ok) throw new Error('Lỗi khi gọi API');
-        return res.json();
-      })
-      .then((data) => {
-        // Cập nhật tiêu đề trang
-        document.title = data.title || 'Default Title';
-
-        // Cập nhật meta description
-        let metaDesc = document.querySelector('meta[name="description"]');
-        if (!metaDesc) {
-          metaDesc = document.createElement('meta');
-          metaDesc.name = 'description';
-          document.head.appendChild(metaDesc);
-        }
-        metaDesc.content = data.description || 'Default description';
-
-        // Cập nhật meta og:title
-        let ogTitle = document.querySelector('meta[property="og:title"]');
-        if (!ogTitle) {
-          ogTitle = document.createElement('meta');
-          ogTitle.setAttribute('property', 'og:title');
-          document.head.appendChild(ogTitle);
-        }
-        ogTitle.content = data.title || 'Default Title1';
-
-        // Cập nhật meta og:description
-        let ogDesc = document.querySelector('meta[property="og:description"]');
-        if (!ogDesc) {
-          ogDesc = document.createElement('meta');
-          ogDesc.setAttribute('property', 'og:description');
-          document.head.appendChild(ogDesc);
-        }
-        ogDesc.content = data.description || 'Default description';
-
-        // Cập nhật meta og:image
-        let ogImage = document.querySelector('meta[property="og:image"]');
-        if (!ogImage) {
-          ogImage = document.createElement('meta');
-          ogImage.setAttribute('property', 'og:image');
-          document.head.appendChild(ogImage);
-        }
-        ogImage.content = data.image || 'https://example.com/default-image.jpg';
-
-        // Cập nhật meta og:url
-        let ogUrl = document.querySelector('meta[property="og:url"]');
-        if (!ogUrl) {
-          ogUrl = document.createElement('meta');
-          ogUrl.setAttribute('property', 'og:url');
-          document.head.appendChild(ogUrl);
-        }
-        ogUrl.content = data.url || window.location.href;
-
-        // Cập nhật meta og:type
-        let ogType = document.querySelector('meta[property="og:type"]');
-        if (!ogType) {
-          ogType = document.createElement('meta');
-          ogType.setAttribute('property', 'og:type');
-          document.head.appendChild(ogType);
-        }
-        ogType.content = data.type || 'website';
-      })
-      .catch((err) => {
-        console.error('Không thể lấy dữ liệu meta từ API:', err);
-      });
-  </script> -->
 </head>
 
 <body>
