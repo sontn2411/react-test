@@ -5,23 +5,32 @@ const About = () => {
     <div>
       <Helmet>
         <title>about | Smarter</title>
-
-        <meta property='og:url' content='https://www.smarter.com' />
-        <meta property='og:type' content='website' />
-        <meta property='og:description' content='Smarter, Smarter' />
         <meta
-          property='og:image'
-          content='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s'
-        />
-        <meta property='og:image:alt' content='Home | Smarter' />
+          name='description'
+          content='Học Lập Trình Để Đi Làm với các khóa học xây dựng UI web với HTML, CSS, lập trình Java, lập trình Javascript, React, ReactJS, lập trình mobile React-Native, lập trình Backend với PHP, Laravel, Node, ExpressJS, MySQL, MongoDB, RESTfulAPI, ...'
+          data-react-helmet='true'
+        ></meta>
 
-        <meta name='twitter:title' content='Home | Smarter' />
-        <meta name='twitter:description' content='Smarter, Smarter' />
         <meta
-          name='twitter:image'
-          content='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s'
+          property='og:url'
+          content='https://fullstack.edu.vn/'
+          data-react-helmet='true'
         />
-        <meta name='twitter:card' content='summary_large_image' />
+        <meta
+          property='og:type'
+          content='article'
+          data-react-helmet='true'
+        ></meta>
+        <meta
+          property='og:title'
+          content='F8 - Học Lập Trình Để Đi Làm'
+          data-react-helmet='true'
+        ></meta>
+        <meta
+          property='og:description'
+          content='Học Lập Trình Để Đi Làm với các khóa học xây dựng UI web với HTML, CSS, lập trình Java, lập trình Javascript, React, ReactJS, lập trình mobile React-Native, lập trình Backend với PHP, Laravel, Node, ExpressJS, MySQL, MongoDB, RESTfulAPI, ...'
+          data-react-helmet='true'
+        ></meta>
       </Helmet>
       <h1>About Page</h1>
       <p>This is the about page of our application.</p>
