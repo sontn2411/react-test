@@ -13,13 +13,19 @@ const Home = () => {
         <meta property='og:type' content='website' />
         <meta property='og:title' content={'11111111'} />
         <meta property='og:description' content={'1111111111'} />
-        {/* OG image tags */}
-        {/* <meta property='og:image' content={image} />
-          <meta property='og:image:secure_url' content={image} />
-          <meta property='og:image:type' content='image/jpeg' />
-          <meta property='og:image:width' content='200' />
-          <meta property='og:image:alt' content={`Image of ${title} site`} /> */}
-        {/* Twitter tags */}
+
+        <meta
+          property='og:image'
+          content='https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg'
+        />
+        <meta
+          property='og:image:secure_url'
+          content='https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg'
+        />
+        <meta property='og:image:type' content='image/jpeg' />
+        <meta property='og:image:width' content='200' />
+        <meta property='og:image:alt' content={`Image of  site`} />
+
         <meta name='twitter:creator' content={'1111111'} />
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:title' content={'1111111'} />
