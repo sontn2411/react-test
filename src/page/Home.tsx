@@ -4,32 +4,57 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <link rel='canonical' href={window.location.href} />
-        <meta name='description' content='11112312312 ' data-rh='true' />
+        <title>asdasdasd</title>
+        <meta data-react-helmet='true' name='title' content='asdasdasd' />
+        <meta data-react-helmet='true' name='description' content='asdasdasd' />
 
-        <meta property='og:url' content={window.location.href} data-rh='true' />
-        <meta property='og:type' content='website' data-rh='true' />
-        <meta property='og:title' content='11111111' data-rh='true' />
-        <meta property='og:description' content='1111111111' data-rh='true' />
-
+        <meta data-react-helmet='true' property='og:type' content='website' />
         <meta
-          data-rh='true'
+          data-react-helmet='true'
+          property='og:url'
+          content='https://react-test-eight-hazel.vercel.app/'
+        />
+        <meta
+          data-react-helmet='true'
+          property='og:title'
+          content='asdasdasd'
+        />
+        <meta
+          data-react-helmet='true'
+          property='og:description'
+          content='asdasdasd'
+        />
+        <meta
+          data-react-helmet='true'
           property='og:image'
-          content='https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg'
+          content='https://metatags.io/images/meta-tags.png'
+        />
+
+        <meta
+          data-react-helmet='true'
+          property='twitter:card'
+          content='summary_large_image'
         />
         <meta
-          data-rh='true'
-          property='og:image:secure_url'
-          content='https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg'
+          data-react-helmet='true'
+          property='twitter:url'
+          content='https://react-test-eight-hazel.vercel.app/'
         />
-        <meta data-rh='true' property='og:image:type' content='image/jpeg' />
-        <meta data-rh='true' property='og:image:width' content='200' />
-        <meta property='og:image:alt' content='Image of site' />
-
-        <meta data-rh='true' name='twitter:creator' content='1111111' />
-        <meta data-rh='true' name='twitter:card' content='summary' />
-        <meta data-rh='true' name='twitter:title' content='1111111' />
-        <meta data-rh='true' name='twitter:description' content='1111111' />
+        <meta
+          data-react-helmet='true'
+          property='twitter:title'
+          content='asdasdasd'
+        />
+        <meta
+          data-react-helmet='true'
+          property='twitter:description'
+          content='asdasdasd'
+        />
+        <meta
+          data-react-helmet='true'
+          property='twitter:image'
+          content='https://metatags.io/images/meta-tags.png'
+        />
       </Helmet>
       <h1>Home</h1>
     </>
